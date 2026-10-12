@@ -81,7 +81,7 @@ Como atendente, quero agendar Manutenção, para registrar atendimento preventiv
  - Confirmação visual na agenda
 
 HU03 — Agendar Limpeza
-Como cliente/atendente, quero agendar Limpeza, para solicitar o serviço mais rápido com duração de 1h30.
+Como cliente/atendente, quero agendar Limpeza, para solicitar o serviço mais rápido com duração de 45m.
  - Opção clara entre os 3 serviços
  - Valor e duração visíveis antes de confirmar
  - Confirmação disponível imediatamente
