@@ -40,9 +40,9 @@ public class DadosIniciais implements CommandLineRunner {
         }
 
         if (servicoRepository.count() == 0) {
-            Servico servico1 = new Servico("Instalação", "Instalação da maquína", 45, new BigDecimal("520.00"));
-            Servico servico2 = new Servico("Limpeza", "Limpeza do Ar Condicionado", 20, new BigDecimal("150.00"));
-            Servico servico3 = new Servico("Manutenção", "Manutenção da maquína", 60, new BigDecimal("380.00"));
+            Servico servico1 = new Servico("Troca de óleo", "Troca de óleo e filtro", 30, new BigDecimal("120.00"));
+            Servico servico2 = new Servico("Alinhamento e balanceamento", "Alinhamento das rodas dianteiras e balanceamento", 60, new BigDecimal("150.00"));
+            Servico servico3 = new Servico("Revisão completa", "Revisão de 30 itens", 120, new BigDecimal("380.00"));
             servicoRepository.save(servico1);
             servicoRepository.save(servico2);
             servicoRepository.save(servico3);
