@@ -1,16 +1,14 @@
 package br.senai.sistema.service;
 
 import java.util.List;
-
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-
 import br.senai.sistema.model.Servico;
 import br.senai.sistema.repository.ServicoRepository;
 
 /**
  * Camada de serviço de Servico: é aqui que ficarão as regras de negócio.
- * Por enquanto, ela só busca os dados no repositório.
+ * Gerencia os serviços: Instalação, Manutenção e Limpeza.
  */
 @Service
 public class ServicoService {
@@ -22,7 +20,7 @@ public class ServicoService {
         this.servicoRepository = servicoRepository;
     }
 
-    /** Lista todos os registros, em ordem alfabética. */
+    /** Lista todos os serviços, em ordem alfabética: Instalação, Limpeza, Manutenção. */
     public List<Servico> listarTodos() {
         return servicoRepository.findAll(Sort.by("nome"));
     }
