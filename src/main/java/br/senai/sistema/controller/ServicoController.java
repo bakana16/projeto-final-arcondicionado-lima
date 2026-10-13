@@ -4,11 +4,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import br.senai.sistema.service.ServicoService;
 
 /**
  * Controller de Servico: recebe as requisições do navegador para /servicos.
+ * Gerencia a exibição dos serviços: Instalação, Manutenção e Limpeza.
  */
 @Controller
 @RequestMapping("/servicos")
@@ -20,7 +20,7 @@ public class ServicoController {
         this.servicoService = servicoService;
     }
 
-    /** GET /servicos -> mostra a lista. */
+    /** GET /servicos -> mostra a lista com os 3 serviços disponíveis. */
     @GetMapping
     public String listar(Model model) {
         model.addAttribute("servicos", servicoService.listarTodos());
