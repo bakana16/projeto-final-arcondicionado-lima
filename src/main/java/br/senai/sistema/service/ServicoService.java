@@ -8,11 +8,10 @@ import br.senai.sistema.repository.ServicoRepository;
 
 /**
  * Camada de serviço de Servico: é aqui que ficarão as regras de negócio.
- * Gerencia os serviços: Instalação, Manutenção e Limpeza.
+ * Gerencia os serviços de ar condicionado: Instalação, Manutenção e Limpeza.
  */
 @Service
 public class ServicoService {
-
     private final ServicoRepository servicoRepository;
 
     // Injeção de dependência: o Spring entrega o repositório pronto pelo construtor.
