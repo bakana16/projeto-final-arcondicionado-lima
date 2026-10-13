@@ -1,9 +1,11 @@
 package br.senai.sistema.config;
 
 import java.math.BigDecimal;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+
 import br.senai.sistema.model.Servico;
 import br.senai.sistema.model.Perfil;
 import br.senai.sistema.model.Usuario;
@@ -38,9 +40,9 @@ public class DadosIniciais implements CommandLineRunner {
         }
 
         if (servicoRepository.count() == 0) {
-            Servico servico1 = new Servico("Instalação", "Instalação de equipamento de ar condicionado", 180, new BigDecimal("350.00"));
-            Servico servico2 = new Servico("Manutenção", "Manutenção preventiva e corretiva de aparelhos", 120, new BigDecimal("200.00"));
-            Servico servico3 = new Servico("Limpeza", "Limpeza e higienização completa do aparelho", 90, new BigDecimal("150.00"));
+            Servico servico1 = new Servico("Troca de óleo", "Troca de óleo e filtro", 30, new BigDecimal("120.00"));
+            Servico servico2 = new Servico("Alinhamento e balanceamento", "Alinhamento das rodas dianteiras e balanceamento", 60, new BigDecimal("150.00"));
+            Servico servico3 = new Servico("Revisão completa", "Revisão de 30 itens", 120, new BigDecimal("380.00"));
             servicoRepository.save(servico1);
             servicoRepository.save(servico2);
             servicoRepository.save(servico3);
